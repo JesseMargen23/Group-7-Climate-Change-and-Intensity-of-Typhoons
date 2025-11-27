@@ -1,0 +1,151 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    transition: 0.25s ease;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    color: black;
+    line-height: 1.6;
+    font-weight: 400;
+    background-color: #111827;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    background: white;
+    color: black;
+}
+
+.nav-left {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.image {
+    width: 80px;
+    height: auto;
+    border-radius: 10px;
+    transition: transform 0.3s ease;
+}
+.nav-title {
+    font-weight: 600;
+    font-size: 2.8rem;
+    color: black;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    gap: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    font-weight: 600;
+    color: black;
+}
+
+.button {
+    float: left;
+    min-width: 150px;
+    max-width: 250px;
+    display: block;
+    margin: 1em;
+    padding: 1em 2em;
+    border: none;
+    background: none;
+    color: inherit;
+    position: relative;
+    z-index: 1;
+    cursor: pointer;
+    font-size: 16px;
+    text-decoration: none;
+}
+
+.button--ujarak::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: 2px solid currentColor;
+    border-radius: 15px;
+    box-sizing: border-box;
+    transform: scale(0);
+    transition: transform 0.3s ease;
+}
+
+.button--ujarak:hover::before {
+    transform: scale(1);
+}
+
+.log {
+    text-decoration: none;
+    color: black;
+    font-weight: 600;
+}
+
+.container {
+    max-width: 1250px;
+    margin: 2rem auto;
+    padding: 0 1rem;
+    font-weight: bold;
+
+}
+
+.container h2 {
+  margin-bottom: 2.3rem;
+    font-weight: 600;
+    text-align: center;
+    color: lightgreen;
+
+}
+.container h4 {
+    margin-bottom: 2.3rem;
+    font-weight: 600;
+    text-align: center;
+    color: black;
+    font-size: 19px;
+
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr); 
+    gap: 1.5rem;
+    justify-items: center;
+    align-items: start;
+    margin: 0 auto;
+}
+
+.card {
+    background: lightblue;
+    color: black;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+    text-align: center;
+    max-width: 300px;
+    width: 100%;
+}
+
+.card:hover {
+    transform: scale(1.05);
+}
+
+.image1 {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%; 
+    object-fit: cover;
+    margin-top: 5px;
+}

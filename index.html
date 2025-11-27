@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Climate Change and Typhoon Intensity</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #111827;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0.5rem 2rem;
+            background: white;
+            color: black;
+        }
+
+        .nav-left {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+        }
+        .nav-title {
+            font-weight: 600;
+            font-size: 2.5rem;
+            color: black;
+        }
+
+        nav ul {
+            display: flex;
+            list-style: none;
+            gap: 20px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            font-weight: 600;
+            color: white;
+        }
+
+        .button {
+            float: left;
+            min-width: 150px;
+            max-width: 250px;
+            display: block;
+            margin: 1em;
+            padding: 1em 2em;
+            border: none;
+            background: none;
+            color: inherit;
+            position: relative;
+            z-index: 1;
+            cursor: pointer;
+            font-size: 16px;
+            text-decoration: none;
+        }
+
+        .button--ujarak::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            border: 2px solid currentColor;
+            border-radius: 15px;
+            box-sizing: border-box;
+            transform: scale(0);
+            transition: transform 0.3s ease;
+        }
+
+        .button--ujarak:hover::before {
+            transform: scale(1);
+        }
+
+        .log {
+            text-decoration: none;
+            color: black;
+            font-weight: 600;
+        }
+        .section-title {
+            border-left: 6px solid #10b981;
+            padding-left: 1rem;
+
+        }
+
+        .card-shadow {
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.4), 0 2px 4px -2px rgba(0, 0, 0, 0.3);
+        }
+
+        .justify-text {
+            text-align: justify;
+        }
+    </style>
+</head>
+
+<body class="antialiased text-gray-100">
+    <nav>
+        <div>
+            <span class="nav-title">Climate Change</span>
+
+        </div>
+
+        <ul>
+            <li> <a href="home.html" class="button button--ujarak">Home</a></li>
+            <li> <a href="about.html" class="button button--ujarak">About</a></li>
+            <a href="open.html" class="log button button--ujarak">Logout</a>
+
+        </ul>
+
+    </nav>
+    <main class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-6">
+
+        <section class="mb-12 bg-gray-800 text-white p-8 rounded-xl shadow-xl">
+            <h2 class="text-4xl sm:text-5xl font-extrabold mb-3 text-emerald-400">The Climate-Typhoon Connection</h2>
+            <p class="text-xl italic text-gray-400 ">Understanding why storms are getting stronger and more destructive.
+            </p>
+        </section>
+
+        <section id="overview" class="mb-16">
+            <h3 class="section-title text-3xl font-bold text-gray-100 mb-8">Overview: The Global Issue</h3>
+            <div class="bg-gray-800 p-6 rounded-lg card-shadow mb-8">
+                <p class="text-lg text-gray-300 leading-relaxed justify-text">
+                    Climate change, fueled by excess greenhouse gases, is dangerously heating the planet's oceans.
+                    These warmer sea surface temperatures provide **more energy** and moisture, acting like a
+                    supercharger
+                    that rapidly intensifies tropical cyclones, leading to higher wind speeds and more devastating
+                    rainfall.
+                    This phenomenon is directly connected to globalization, as interconnected global supply chains and
+                    massive
+                    industrialization drive the continuous increase in carbon emissions worldwide.
+                    This economic structure accelerates the warming, while also making densely populated,
+                    globally-linked coastal cities
+                    (like those in Asia) incredibly vulnerable to catastrophic economic and human loss.
+                </p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                <div class="rounded-lg overflow-hidden card-shadow">
+                    <img src="pic2.jpg" alt="Rising Ocean Temperatures" class="w-full h-auto object-cover"
+                        onerror="this.src='https://placehold.co/600x400/064e3b/ffffff?text=Image+of+Ocean+Warming'"
+                        loading="lazy">
+                    <p class="p-3 text-sm text-gray-400 bg-gray-700">Image 1: Global oceans are absorbing over 90% of
+                        the excess heat, fueling stronger storms.</p>
+                </div>
+                <div class="rounded-lg overflow-hidden card-shadow">
+                    <img src="pic1.jpg" alt="Global Supply Chain and Emissions" class="w-full h-auto object-cover"
+                        onerror="this.src='https://placehold.co/600x400/10b981/ffffff?text=Image+of+Globalization'"
+                        loading="lazy">
+                    <p class="p-3 text-sm text-gray-400 bg-gray-700">Image 2: Interconnected trade leads to increased
+                        consumption and higher industrial emissions globally.</p>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="bg-gray-900 text-white text-center p-6 mt-12">
+        <p class="text-sm">Prepared for: Global Issue Report | Data is conceptual and based on scientific consensus.</p>
+    </footer>
+
+</body>
+
+</html>
